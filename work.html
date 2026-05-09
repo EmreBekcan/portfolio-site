@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work | Portfolyo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="preloader">
+        <img src="images/Rectangle 5.svg" alt="Yükleniyor..." class="loader-svg">
+        <img src="images/Polygon 1.svg" alt="Yükleniyor..." class="loader-svg">
+        <img src="images/Ellipse 1.svg" alt="Yükleniyor..." class="loader-svg">
+    </div>
+
+    <header class="main-header">
+        <div class="logo">
+            <a href="index.html" data-key="portfolio">Portfolyo</a>
+        </div>
+
+        <div class="header-right">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="nav-button-with-icon"><img src="images/Rectangle 5.svg"
+                                alt="Home Page"><span data-key="navHome">Home Page</span></a></li>
+                    <li><a href="work.html" class="nav-button-with-icon"><img src="images/Polygon 1.svg"
+                                alt="Work"><span data-key="navWork">Work</span></a></li>
+                    <li><a href="about.html" class="nav-button-with-icon"><img src="images/Ellipse 1.svg"
+                                alt="About"><span data-key="navAbout">About</span></a></li>
+                </ul>
+            </nav>
+            <button id="lang-switcher" type="button">TR</button>
+        </div>
+
+    </header>
+
+    <main class="work-page-content">
+        <div class="container">
+            <h2 class="page-title" data-key="worksTitle">3D Works</h2>
+            <div class="work-gallery">
+                <div class="gallery-item item-1"><img src="images/work/Mask G.png" alt="3D Work 1"></div>
+                <div class="gallery-item item-2"><img src="images/work/Mask group-8.png" alt="3D Work 2"></div>
+                <div class="gallery-item item-3"><img src="images/work/Mask group-5.png" alt="3D Work 3"></div>
+                <div class="gallery-item item-4"><img src="images/work/Mask group-1.png" alt="3D Work 4"></div>
+                <div class="gallery-item item-5"><img src="images/work/Mask group-3.png" alt="3D Work 5"></div>
+                <div class="gallery-item item-6"><img src="images/work/Mask group.png" alt="3D Work 6"></div>
+                <div class="gallery-item item-7"><img src="images/work/Mask group-7.png" alt="3D Work 7"></div>
+                <div class="gallery-item item-8"><img src="images/work/Mask group-2.png" alt="3D Work 8"></div>
+                <div class="gallery-item item-9"><img src="images/work/Mask group-4.png" alt="3D Work 9"></div>
+                <div class="gallery-item item-10"><img src="images/work/Mask group-9.png" alt="3D Work 10"></div>
+                <div class="gallery-item item-11"><img src="images/work/Mask group-6.png" alt="3D Work 11"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="contact-me">
+                <h3 data-key="contactMe">Contact Me</h3>
+                <div class="line"></div>
+                <p>+90 545 721 73 16</p>
+                <p>emrebkcn@gmail.com</p>
+                <p>bekcann33@gmail.com</p>
+            </div>
+            <div class="social">
+                <h3 data-key="social">Social</h3>
+                <div class="line"></div>
+                <p><a href="https://instagram.com/emrebkcn" target="_blank">emrebkcn</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        import { Analytics } from "@vercel/analytics/next"
+        // Analytics component will be rendered here
+    </script>
+</body>
+
+</html>

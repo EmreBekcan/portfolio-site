@@ -1,0 +1,25 @@
+{
+    "name": "portfolio-site",
+    "version": "1.0.0",
+    "description": "Personal portfolio website with contact form",
+    "main": "api/send-email.js",
+    "scripts": {
+        "dev": "vercel dev",
+        "build": "echo 'Static site - no build required'",
+        "start": "vercel dev"
+    },
+    "dependencies": {
+        "resend": "^3.2.0",
+        "@vercel/analytics": "^1.1.1"
+    },
+    "devDependencies": {
+        "vercel": "^32.0.0"
+    },
+    "keywords": [
+        "portfolio",
+        "contact-form",
+        "resend"
+    ],
+    "author": "Emre Bekcan",
+    "license": "MIT"
+}

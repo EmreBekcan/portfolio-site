@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Portfolyo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="preloader">
+        <img src="images/Rectangle 5.svg" alt="Yükleniyor..." class="loader-svg">
+        <img src="images/Polygon 1.svg" alt="Yükleniyor..." class="loader-svg">
+        <img src="images/Ellipse 1.svg" alt="Yükleniyor..." class="loader-svg">
+    </div>
+
+    <header class="main-header">
+        <div class="logo">
+            <a href="index.html" data-key="portfolio">Portfolyo</a>
+        </div>
+
+        <div class="header-right">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="nav-button-with-icon"><img src="images/Rectangle 5.svg"
+                                alt="Home Page"><span data-key="navHome">Home Page</span></a></li>
+                    <li><a href="work.html" class="nav-button-with-icon"><img src="images/Polygon 1.svg"
+                                alt="Work"><span data-key="navWork">Work</span></a></li>
+                    <li><a href="about.html" class="nav-button-with-icon"><img src="images/Ellipse 1.svg"
+                                alt="About"><span data-key="navAbout">About</span></a></li>
+                </ul>
+            </nav>
+            <button id="lang-switcher" type="button">TR</button>
+        </div>
+
+    </header>
+
+    <main class="about-page-content">
+        <div class="container">
+            <section class="get-in-touch-section">
+                <div class="grid-layout">
+                    <div class="section-title">
+                        <h2 data-key="getInTouch">Get in touch</h2>
+                    </div>
+                    <div class="bio-text">
+                        <p data-key="bio">I graduated from visual communication design department in 2023. I work on
+                            graphic design, 3D modeling and UX/UI. I also do editing, game design and architectural
+                            visualization. In my spare time I shoot photography and short films and use them to improve
+                            the quality of my work.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="inquiries-section">
+                <div class="grid-layout">
+                    <div class="form-container">
+                        <div class="section-title">
+                            <h2 data-key="inquiries">Inquiries</h2>
+                        </div>
+                        <p data-key="formIntro">Please fill out the form on the bottom or email me directly at: <a
+                                href="mailto:emrebkcn@gmail.com">emrebkcn@gmail.com</a></p>
+                        <form id="contact-form" action="/api/send-email" method="POST">
+                            <input type="text" name="name" data-key="formName" placeholder="Name" required>
+                            <input type="email" name="email" data-key="formEmail" placeholder="Email" required>
+                            <input type="text" name="subject" data-key="formSubject" placeholder="Subject" required>
+                            <textarea name="message" data-key="formProject" placeholder="About Project" rows="5"
+                                required></textarea>
+                            <input type="hidden" name="_subject" value="Portfolio Inquiry">
+                            <button type="submit" class="more-button" data-key="formSend">Send</button>
+                        </form>
+                    </div>
+                    <div class="shapes-image-container">
+                        <img src="images/Group 5.svg" alt="Geometrik Şekiller">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="contact-me">
+                <h3 data-key="contactMe">Contact Me</h3>
+                <div class="line"></div>
+                <p><a href="tel:+905457217316">+90 545 721 73 16</a></p>
+                <p><a href="mailto:emrebkcn@gmail.com">emrebkcn@gmail.com</a></p>
+                <p><a href="mailto:bekcann33@gmail.com">bekcann33@gmail.com</a></p>
+            </div>
+            <div class="social">
+                <h3 data-key="social">Social</h3>
+                <div class="line"></div>
+                <p><a href="https://instagram.com/emrebkcn" target="_blank">emrebkcn</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        import { Analytics } from "@vercel/analytics/next"
+        // Analytics component will be rendered here
+    </script>
+</body>
+
+</html>
